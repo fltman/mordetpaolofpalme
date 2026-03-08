@@ -6,7 +6,7 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'bjarby_compalme');
 define('DB_USER', 'bjarby_compalme');
-define('DB_PASS', '12qwaszx!!!');
+define('DB_PASS', getenv('DB_PASS') ?: 'CHANGE_ME');
 define('OPENROUTER_API_KEY', getenv('OPENROUTER_API_KEY') ?: '');
 define('AI_MODEL', 'anthropic/claude-haiku-4.5');
 
